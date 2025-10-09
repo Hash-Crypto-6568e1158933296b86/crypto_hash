@@ -1,5 +1,5 @@
 
- # 🧠 Crypto Hunter – Windows e Linux
+ # 🧠 fox_Crypto – Windows e Linux
 
 Ferramenta para busca de chaves e endereços Bitcoin por força bruta utilizando modos **address** e **BSGS**.
 
@@ -8,23 +8,23 @@ Ferramenta para busca de chaves e endereços Bitcoin por força bruta utilizando
 ## 📦 Windows/🐧 Linux – Exemplos de uso
 
 ```bash
-crypto_hunter -h
+fox_Crypto -h
 
-crypto_hunter -m address -f tests/71.txt -t 24 -l compress -6 -S -e -r 400000000000000000:7fffffffffffffffff -n 1024
+fox_Crypto -m address -f tests/71.txt -t 24 -l compress -6 -S -e -r 400000000000000000:7fffffffffffffffff -n 1024
 
-crypto_hunter -m rmd160 -f tests/71.rmd -t 24 -l compress -6 -S -e -r 400000000000000000:7fffffffffffffffff -n 1024
+fox_Crypto -m rmd160 -f tests/71.rmd -t 24 -l compress -6 -S -e -r 400000000000000000:7fffffffffffffffff -n 1024
 
-crypto_hunter -m bsgs -t 24 -f tests/135.txt -k 4096 -6 -S -e 4000000000000000000000000000000000:7fffffffffffffffffffffffffffffffff
+fox_Crypto -m bsgs -t 24 -f tests/135.txt -k 4096 -6 -S -e 4000000000000000000000000000000000:7fffffffffffffffffffffffffffffffff
 
 🐧 Linux – Exemplos de uso
 
-./crypto_hunter -h
+./fox_Crypto -h
 
-./crypto_hunter -m address -f tests/71.txt -t 24 -l compress -6 -S -e -r 400000000000000000:7fffffffffffffffff -n 1024
+./fox_Crypto -m address -f tests/71.txt -t 24 -l compress -6 -S -e -r 400000000000000000:7fffffffffffffffff -n 1024
 
-./crypto_hunter -m rmd160 -f tests/71.rmd -t 24 -l compress -6 -S -e -r 400000000000000000:7fffffffffffffffff -n 1024
+./fox_Crypto -m rmd160 -f tests/71.rmd -t 24 -l compress -6 -S -e -r 400000000000000000:7fffffffffffffffff -n 1024
 
-./crypto_hunter -m bsgs -t 24 -f tests/135.txt -k 4096 -6 -S -e 4000000000000000000000000000000000:7fffffffffffffffffffffffffffffffff
+./fox_Crypto -m bsgs -t 24 -f tests/135.txt -k 4096 -6 -S -e 4000000000000000000000000000000000:7fffffffffffffffffffffffffffffffff
 
 🧠 Parâmetros recomendados para o modo BSGS de acordo com sua RAM
 
