@@ -52,7 +52,7 @@ apt install build-essential -y
 apt install libssl-dev -y
 apt install libgmp-dev -y
 
-git clone https://github.com/foxlife281/fox_crypto-windows-linux.git
+git clone https://github.com/foxlife281/fox_crypto.git
 
 cd fox_crypto
 
@@ -62,7 +62,7 @@ make legacy
 
 Para compilar para windows use o Cygwin.
 
-git clone https://github.com/foxlife281/fox_crypto-windows-linux.git
+git clone https://github.com/foxlife281/fox_crypto.git
 
 cd fox_crypto
 
