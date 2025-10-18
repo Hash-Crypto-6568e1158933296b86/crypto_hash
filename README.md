@@ -8,23 +8,23 @@ Ferramenta para busca de chaves e endereços Bitcoin por força bruta utilizando
 ## 📦 Windows/🐧 Linux – Exemplos de uso
 
 ```bash
-fox_Crypto -h
+fox_crypto -h
 
-fox_Crypto -m address -f tests/71.txt -t 24 -l compress -6 -S -e -r 400000000000000000:7fffffffffffffffff -n 1024
+fox_crypto -m address -f tests/71.txt -t 24 -l compress -6 -S -e -r 400000000000000000:7fffffffffffffffff -n 1024
 
-fox_Crypto -m rmd160 -f tests/71.rmd -t 24 -l compress -6 -S -e -r 400000000000000000:7fffffffffffffffff -n 1024
+fox_crypto -m rmd160 -f tests/71.rmd -t 24 -l compress -6 -S -e -r 400000000000000000:7fffffffffffffffff -n 1024
 
-fox_Crypto -m bsgs -t 24 -f tests/135.txt -k 4096 -6 -S -e 4000000000000000000000000000000000:7fffffffffffffffffffffffffffffffff
+fox_crypto -m bsgs -t 24 -f tests/135.txt -k 4096 -6 -S -e 4000000000000000000000000000000000:7fffffffffffffffffffffffffffffffff
 
 🐧 Linux – Exemplos de uso
 
-./fox_Crypto -h
+./fox_crypto -h
 
-./fox_Crypto -m address -f tests/71.txt -t 24 -l compress -6 -S -e -r 400000000000000000:7fffffffffffffffff -n 1024
+./fox_crypto -m address -f tests/71.txt -t 24 -l compress -6 -S -e -r 400000000000000000:7fffffffffffffffff -n 1024
 
-./fox_Crypto -m rmd160 -f tests/71.rmd -t 24 -l compress -6 -S -e -r 400000000000000000:7fffffffffffffffff -n 1024
+./fox_crypto -m rmd160 -f tests/71.rmd -t 24 -l compress -6 -S -e -r 400000000000000000:7fffffffffffffffff -n 1024
 
-./fox_Crypto -m bsgs -t 24 -f tests/135.txt -k 4096 -6 -S -e 4000000000000000000000000000000000:7fffffffffffffffffffffffffffffffff
+./fox_crypto -m bsgs -t 24 -f tests/135.txt -k 4096 -6 -S -e 4000000000000000000000000000000000:7fffffffffffffffffffffffffffffffff
 
 🧠 Parâmetros recomendados para o modo BSGS de acordo com sua RAM
 
@@ -43,3 +43,20 @@ fox_Crypto -m bsgs -t 24 -f tests/135.txt -k 4096 -6 -S -e 400000000000000000000
 | 2 TB   | `-n 0x4000000000000 -k 16384`  |
 | 4 TB   | `-n 0x4000000000000 -k 32768`  |
 | 8 TB   | `-n 0x10000000000000 -k 32768` |
+
+instruções para compilar o fox_crypto
+
+apt update && apt upgrade
+apt install git -y
+apt install build-essential -y
+apt install libssl-dev -y
+apt install libgmp-dev -y
+
+git clone https://github.com/foxlife281/fox_crypto-windows-linux.git
+
+cd fxo_crypto-windows-linux.git
+
+make
+
+make legacy
+
