@@ -54,9 +54,18 @@ apt install libgmp-dev -y
 
 git clone https://github.com/foxlife281/fox_crypto-windows-linux.git
 
-cd fox_crypto-windows-linux
+cd fox_crypto
 
 make
 
 make legacy
+
+Para compilar para windows use o Cygwin.
+
+git clone https://github.com/foxlife281/fox_crypto-windows-linux.git
+
+cd fox_crypto
+
+make
+
 
