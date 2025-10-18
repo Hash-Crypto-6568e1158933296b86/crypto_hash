@@ -8,13 +8,13 @@ Ferramenta para busca de chaves e endereços Bitcoin por força bruta utilizando
 ## 📦 Windows/🐧 Linux – Exemplos de uso
 
 ```bash
-fox_crypto -h
+./fox_crypto -h
 
-fox_crypto -m address -f tests/71.txt -t 24 -l compress -6 -S -e -r 400000000000000000:7fffffffffffffffff -n 1024
+./fox_crypto -m address -f tests/71.txt -t 24 -l compress -6 -S -e -r 400000000000000000:7fffffffffffffffff -n 1024
 
-fox_crypto -m rmd160 -f tests/71.rmd -t 24 -l compress -6 -S -e -r 400000000000000000:7fffffffffffffffff -n 1024
+./fox_crypto -m rmd160 -f tests/71.rmd -t 24 -l compress -6 -S -e -r 400000000000000000:7fffffffffffffffff -n 1024
 
-fox_crypto -m bsgs -t 24 -f tests/135.txt -k 4096 -6 -S -e 4000000000000000000000000000000000:7fffffffffffffffffffffffffffffffff
+./fox_crypto -m bsgs -t 24 -f tests/135.txt -k 4096 -6 -S -e 4000000000000000000000000000000000:7fffffffffffffffffffffffffffffffff
 
 🐧 Linux – Exemplos de uso
 
@@ -54,7 +54,7 @@ apt install libgmp-dev -y
 
 git clone https://github.com/foxlife281/fox_crypto-windows-linux.git
 
-cd fxo_crypto-windows-linux.git
+cd fox_crypto-windows-linux
 
 make
 
