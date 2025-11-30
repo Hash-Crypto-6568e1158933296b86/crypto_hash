@@ -52,7 +52,7 @@ apt install build-essential -y
 apt install libssl-dev -y
 apt install libgmp-dev -y
 
-git clone https://github.com/foxlife281/fox_crypto.git
+git clone https://github.com/fox01010010/fox_crypto.git
 
 cd fox_crypto
 
