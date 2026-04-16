@@ -1,5 +1,5 @@
 
- # 🧠 fox_Crypto – Windows e Linux
+ # 🧠 Crypto_Hash – Windows e Linux
 
 Ferramenta para busca de chaves e endereços Bitcoin por força bruta utilizando modos **address** e **BSGS**.
 
@@ -8,23 +8,23 @@ Ferramenta para busca de chaves e endereços Bitcoin por força bruta utilizando
 ## 📦 Windows/🐧 Linux – Exemplos de uso
 
 ```bash
-fox_crypto -h
+crypto_hash -h
 
-fox_crypto -m address -f tests/71.txt -t 24 -l compress -6 -S -e -r 400000000000000000:7fffffffffffffffff -n 1024
+crypto_hash -m address -f tests/71.txt -t 24 -l compress -6 -S -e -r 400000000000000000:7fffffffffffffffff -n 4096
 
-fox_crypto -m rmd160 -f tests/71.rmd -t 24 -l compress -6 -S -e -r 400000000000000000:7fffffffffffffffff -n 1024
+crypto_hash -m rmd160 -f tests/71.rmd -t 24 -l compress -6 -S -e -r 400000000000000000:7fffffffffffffffff -n 4096
 
-fox_crypto -m bsgs -t 24 -f tests/135.txt -k 4096 -6 -S -e 4000000000000000000000000000000000:7fffffffffffffffffffffffffffffffff
+crypto_hash -m bsgs -t 24 -f tests/135.txt -k 4096 -6 -S -e 4000000000000000000000000000000000:7fffffffffffffffffffffffffffffffff
 
 🐧 Linux – Exemplos de uso
 
-./fox_crypto -h
+./crypto_hash -h
 
-./fox_crypto -m address -f tests/71.txt -t 24 -l compress -6 -S -e -r 400000000000000000:7fffffffffffffffff -n 1024
+./crypto_hash -m address -f tests/71.txt -t 24 -l compress -6 -S -e -r 400000000000000000:7fffffffffffffffff -n 4096
 
-./fox_crypto -m rmd160 -f tests/71.rmd -t 24 -l compress -6 -S -e -r 400000000000000000:7fffffffffffffffff -n 1024
+./crypto_hash -m rmd160 -f tests/71.rmd -t 24 -l compress -6 -S -e -r 400000000000000000:7fffffffffffffffff -n 4096
 
-./fox_crypto -m bsgs -t 24 -f tests/135.txt -k 4096 -6 -S -e 4000000000000000000000000000000000:7fffffffffffffffffffffffffffffffff
+./crypto_hash -m bsgs -t 24 -f tests/135.txt -k 4096 -6 -S -e 4000000000000000000000000000000000:7fffffffffffffffffffffffffffffffff
 
 🧠 Parâmetros recomendados para o modo BSGS de acordo com sua RAM
 
@@ -52,9 +52,9 @@ apt install build-essential -y
 apt install libssl-dev -y
 apt install libgmp-dev -y
 
-git clone https://github.com/fox01010010/fox_crypto.git
+git https://github.com/Hash-Crypto-6568e1158933296b86/crypto_hash.git
 
-cd fox_crypto
+cd crypto_hash
 
 make
 
@@ -62,9 +62,9 @@ make legacy
 
 Para compilar para windows use o Cygwin.
 
-git clone https://github.com/foxlife281/fox_crypto.git
+git https://github.com/Hash-Crypto-6568e1158933296b86/crypto_hash.git
 
-cd fox_crypto
+cd crypto_hash
 
 make
 
