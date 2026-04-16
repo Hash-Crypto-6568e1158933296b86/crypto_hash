@@ -14,7 +14,7 @@ crypto_hash -m address -f tests/71.txt -t 24 -l compress -6 -S -z 6 -e -r 400000
 
 crypto_hash -m rmd160 -f tests/71.rmd -t 24 -l compress -6 -S -z 6 -e -r 400000000000000000:7fffffffffffffffff -n 4096
 
-crypto_hash -m bsgs -t 24 -f tests/135.txt -k 4096 -6 -S -e -r -z 4 -r 4000000000000000000000000000000000:7fffffffffffffffffffffffffffffffff
+crypto_hash -m bsgs -t 24 -f tests/135.txt -k 4096 -6 -S -e -z 4 -r 4000000000000000000000000000000000:7fffffffffffffffffffffffffffffffff
 
 🐧 Linux – Exemplos de uso
 
