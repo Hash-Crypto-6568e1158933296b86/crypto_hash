@@ -10,21 +10,21 @@ Ferramenta para busca de chaves e endereços Bitcoin por força bruta utilizando
 ```bash
 crypto_hash -h
 
-crypto_hash -m address -f tests/71.txt -t 24 -l compress -6 -S -z 6 -e -r 400000000000000000:7fffffffffffffffff -n 4096
+crypto_hash -m address -f tests/71.txt -t 24 -l compress -6 -S -e -r 400000000000000000:7fffffffffffffffff -n 4096
 
-crypto_hash -m rmd160 -f tests/71.rmd -t 24 -l compress -6 -S -z 6 -e -r 400000000000000000:7fffffffffffffffff -n 4096
+crypto_hash -m rmd160 -f tests/71.rmd -t 24 -l compress -6 -S -e -r 400000000000000000:7fffffffffffffffff -n 4096
 
-crypto_hash -m bsgs -t 24 -f tests/135.txt -k 4096 -6 -S -e -z 4 -r 4000000000000000000000000000000000:7fffffffffffffffffffffffffffffffff
+crypto_hash -m bsgs -t 24 -f tests/135.txt -k 4096 -6 -S -e -r 4000000000000000000000000000000000:7fffffffffffffffffffffffffffffffff
 
 🐧 Linux – Exemplos de uso
 
 ./crypto_hash -h
 
-./crypto_hash -m address -f tests/71.txt -t 24 -l compress -6 -S -z 6 -e -r 400000000000000000:7fffffffffffffffff -n 4096
+./crypto_hash -m address -f tests/71.txt -t 24 -l compress -6 -S -e -r 400000000000000000:7fffffffffffffffff -n 4096
 
-./crypto_hash -m rmd160 -f tests/71.rmd -t 24 -l compress -6 -S -z 6 -e -r 400000000000000000:7fffffffffffffffff -n 4096
+./crypto_hash -m rmd160 -f tests/71.rmd -t 24 -l compress -6 -S -e -r 400000000000000000:7fffffffffffffffff -n 4096
 
-./crypto_hash -m bsgs -t 24 -f tests/135.txt -k 4096 -6 -S -e -r -z 4 -r 4000000000000000000000000000000000:7fffffffffffffffffffffffffffffffff
+./crypto_hash -m bsgs -t 24 -f tests/135.txt -k 4096 -6 -S -e -r 4000000000000000000000000000000000:7fffffffffffffffffffffffffffffffff
 
 🧠 Parâmetros recomendados para o modo BSGS de acordo com sua RAM
 
@@ -67,5 +67,8 @@ git https://github.com/Hash-Crypto-6568e1158933296b86/crypto_hash.git
 cd crypto_hash
 
 make
+
+Original Code
+https://github.com/albertobsd/keyhunt
 
 
